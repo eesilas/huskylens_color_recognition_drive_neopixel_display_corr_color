@@ -1,5 +1,6 @@
 {
     "name": "huskylens_color_recognition_drive_Neopixel_display_corr_color",
+    "version": "0.0.1",
     "description": "",
     "dependencies": {
         "core": "*",
