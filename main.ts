@@ -5,14 +5,14 @@ let strip = neopixel.create(DigitalPin.P0, 12, NeoPixelMode.RGB)
 strip.showRainbow(1, 360)
 basic.forever(function () {
     huskylens.request()
-    if (huskylens.isAppear(1, HUSKYLENSResultType_t.HUSKYLENSResultBlock)) {
+    if (huskylens.isAppear(2, HUSKYLENSResultType_t.HUSKYLENSResultBlock)) {
         strip.showColor(neopixel.colors(NeoPixelColors.Red))
-    } else if (huskylens.isAppear(2, HUSKYLENSResultType_t.HUSKYLENSResultBlock)) {
+    } else if (huskylens.isAppear(3, HUSKYLENSResultType_t.HUSKYLENSResultBlock)) {
         strip.showColor(neopixel.colors(NeoPixelColors.Green))
-    } else if (huskylens.isAppear(5, HUSKYLENSResultType_t.HUSKYLENSResultBlock)) {
+    } else if (huskylens.isAppear(4, HUSKYLENSResultType_t.HUSKYLENSResultBlock)) {
         strip.showColor(neopixel.colors(NeoPixelColors.Blue))
-    } else if (huskylens.isAppear(8, HUSKYLENSResultType_t.HUSKYLENSResultBlock)) {
-        strip.showColor(neopixel.colors(NeoPixelColors.Orange))
+    } else if (huskylens.isAppear(1, HUSKYLENSResultType_t.HUSKYLENSResultBlock)) {
+        strip.showColor(neopixel.colors(NeoPixelColors.White))
     } else {
         basic.showIcon(IconNames.Heart)
     }
